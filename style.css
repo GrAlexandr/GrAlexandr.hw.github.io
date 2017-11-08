@@ -1,0 +1,41 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial sans-serif;
+	font-size: 20px;
+}
+.wrapper {
+	display: flex;
+	flex-flow: row nowrap;
+	max-width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	background-color: #48806b;
+}
+.main {
+	flex: 1 2 90%;
+	padding: 20px;
+	background-color: #48806b;
+}
+.main .personage {
+	font-size: 22px;
+	color: #a51122;
+}
+.nav {
+	flex: 1 1 10%;
+	padding: 20px;
+	align-self: center;
+	background-color: #688069;
+
+}
+.nav input {
+	margin-bottom: 20px;
+	border-radius: 5px;
+	background-color: #8addbc;
+	font-size: 20px;
+}
+@media screen and (max-width: 500px){
+	.wrapper {
+		flex-flow: column wrap;
+	}
+}
